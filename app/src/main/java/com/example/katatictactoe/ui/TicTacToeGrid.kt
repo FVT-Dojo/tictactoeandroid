@@ -10,6 +10,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
+//In this code:
+//
+//We create a Surface with a fixed size of 300dp and a black border.
+//Inside the Surface, we use a Column to create three rows.
+//Each row is a Row composable that contains three Box composables representing the cells.
+//The cells have a weight of 1 to evenly distribute the available space and an aspect ratio of 1 to maintain a square shape.
+//Each cell has a black border to visually separate them.
+
 @Composable
 fun TicTacToeGrid() {
     Surface(
