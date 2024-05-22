@@ -3,8 +3,6 @@ import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.unit.dp
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.katatictactoe.MainActivity
-import com.example.katatictactoe.ui.TicTacToeGrid
-import com.example.katatictactoe.ui.theme.KataTicTacToeTheme
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -17,12 +15,6 @@ class TicTacToeGridTest {
 
     @Test
     fun renderTicTacToeGrid() {
-        composeTestRule.setContent {
-            KataTicTacToeTheme {
-                TicTacToeGrid()
-            }
-        }
-
         // Check for the presence of the 3x3 grid
         composeTestRule.onNodeWithTag("TicTacToeGrid").assertIsDisplayed()
 

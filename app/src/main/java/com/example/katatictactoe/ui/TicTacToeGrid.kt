@@ -34,6 +34,7 @@ fun TicTacToeGrid() {
                                 .weight(1f)
                                 .aspectRatio(1f)
                                 .border(BorderStroke(1.dp, Color.Black))
+                                .testTag("Cell_$row$column")
                         )
                     }
                 }
