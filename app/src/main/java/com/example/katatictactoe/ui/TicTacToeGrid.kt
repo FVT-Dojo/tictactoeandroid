@@ -7,6 +7,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
@@ -21,7 +22,7 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun TicTacToeGrid() {
     Surface(
-        modifier = Modifier.size(300.dp),
+        modifier = Modifier.size(300.dp).testTag("TicTacToeGrid"),
         border = BorderStroke(2.dp, Color.Black)
     ) {
         Column(Modifier.fillMaxSize()) {
