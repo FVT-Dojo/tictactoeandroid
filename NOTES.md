@@ -6,8 +6,11 @@ Refactor to use MVVM.
     - ✅Create a model for the game state
     - ✅Create a unit test for the initializer
     - Create a ViewModel for the game!
+    - 🙌 Add a seperate Contract file for separation between UI, UI state and Actions
+    - Add a function that creates an empty board (2d-array)
 
 ## As a player, I want to be able to place my symbol (X or O) on an empty cell in the grid so that I can make my move.
+- Store board data in a data source (if needed)
 
 ## As a player, I want to take turns with my opponent so that we can play a fair game.
 
