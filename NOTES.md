@@ -2,6 +2,10 @@
 
 ## ✅ As a player, I want to see a 3x3 grid so that I can play tic tac toe.
 ✅ Render a 3x3 grid
+Refactor to use MVVM.
+    - ✅Create a model for the game state
+    - ✅Create a unit test for the initializer
+    - Create a ViewModel for the game!
 
 ## As a player, I want to be able to place my symbol (X or O) on an empty cell in the grid so that I can make my move.
 
