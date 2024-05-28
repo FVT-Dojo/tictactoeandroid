@@ -9,7 +9,7 @@ Backlog:
 ## As a player, I want to see a 3x3 grid so that I can play tic tac toe.
 ✅Set-up an empty ViewModel
 Create model for the game board (3x3 grid, 2d-array?)
-- 🍅Create GameBoard instance --> empty 3x3 grid 
+- ✅ Create GameBoard instance --> empty 3x3 grid
 
 ## As a player, I want to be able to place my symbol (X or O) on an empty cell in the grid so that I can make my move.
 

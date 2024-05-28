@@ -14,8 +14,18 @@ class GameModelTest {
 
     @Test
     fun `Create empty game board, which is a 3x3 grid`() {
-        val output = GameModel()
+        val gameModel = GameModel()
 
+        val rows = gameModel.grid
+        assertEquals(3, rows.size)
+
+        rows.forEach { row ->
+            assertEquals(3, row.size)
+
+            row.forEach { cell ->
+                assertNull(cell)
+            }
+        }
     }
 
     @After
