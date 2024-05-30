@@ -7,7 +7,6 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.example.katatictactoe.ui.TicTacToeGrid
 import com.example.katatictactoe.ui.theme.KataTicTacToeTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,7 +18,6 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     contentAlignment = Alignment.Center
                 ) {
-                    TicTacToeGrid()
                 }
             }
         }
