@@ -21,6 +21,8 @@ Given a player has opened the Tic Tac Toe app on his phone
 When the player taps the top left cell
 Then an 'X' will become visible in the top left cell
 
+✅ Write the E2E test
+
 ### Create an Espresso test for this scenario
 Configure the Espresso dependencies --> not needed, for now
 Create the test
