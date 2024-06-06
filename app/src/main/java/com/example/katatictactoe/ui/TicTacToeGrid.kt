@@ -21,6 +21,7 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shadow
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
@@ -57,22 +58,24 @@ fun TicTacToeGrid(gameState: GameModel) {
                     ),
                     textAlign = TextAlign.Center,
                     fontFamily = FontFamily.Serif
-                )
+                ),
+                modifier = Modifier.testTag("TicTacToeTitleText")
             )
         }
-        for (i in 0 until 3) {
+        repeat(3) {rowIndex ->
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.Center
             ) {
-                for (j in 0 until 3) {
+                repeat(3) {colIndex ->
                     Box(
                         modifier = Modifier
                             .width(80.dp)
                             .aspectRatio(1f)
                             .shadow(4.dp, RoundedCornerShape(8.dp)) // Add shadow and rounded corners
                             .border(2.dp, Color.Gray, RoundedCornerShape(8.dp)) // Use gray border with rounded corners
-                            .background(Color.LightGray, RoundedCornerShape(8.dp)), // Light gray background with rounded corners
+                            .background(Color.LightGray, RoundedCornerShape(8.dp))
+                            .testTag("Cell_${rowIndex}_${colIndex}"), // Light gray background with rounded corners
                         contentAlignment = Alignment.Center
                     ) {
                         // Placeholder for cell content, like X or O

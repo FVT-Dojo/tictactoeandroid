@@ -11,7 +11,8 @@ Backlog:
 Create model for the game board (3x3 grid, 2d-array?)
 - ✅ Create GameBoard instance --> empty 3x3 grid
 - ✅ Add GameModel to ViewModel
-- 🙌 Create View for the TicTacToe grid (Where is the test????????)
+- ✅ Create View for the TicTacToe grid (Where is the test????????)
+- - ✅ Create a test for the grid, to make sure it shows
 
 ## As a player, I want to be able to place my symbol (X or O) on an empty cell in the grid so that I can make my move.
 
