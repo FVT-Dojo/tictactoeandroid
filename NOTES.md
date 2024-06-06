@@ -15,6 +15,15 @@ Create model for the game board (3x3 grid, 2d-array?)
 - - ✅ Create a test for the grid, to make sure it shows
 
 ## As a player, I want to be able to place my symbol (X or O) on an empty cell in the grid so that I can make my move.
+Assuming that X always starts the game.
+
+Given a player has opened the Tic Tac Toe app on his phone
+When the player taps the top left cell
+Then an 'X' will become visible in the top left cell
+
+### Create an Espresso test for this scenario
+Configure the Espresso dependencies --> not needed, for now
+Create the test
 
 ## As a player, I want to take turns with my opponent so that we can play a fair game.
 
